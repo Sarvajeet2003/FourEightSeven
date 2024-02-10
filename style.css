@@ -1,0 +1,156 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #004d7d;
+    color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(-10px);
+    white-space: nowrap;
+    width: 200px;
+}
+
+.group:hover .submenu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #1a202c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: white;
+}
+
+.grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+img {
+    max-width: 100%;
+    height: fit-content;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #2d3748;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+footer>div {
+    flex: 1;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    max-width: 25%;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer li {
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #61dafb;
+}
+
+footer .text-center {
+    margin-top: 20px;
+}
+
+footer form {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+footer input {
+    flex: 1;
+    background-color: #000000;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    margin-right: 8px;
+    padding: 8px;
+    outline: none;
+}
+
+footer button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    outline: none;
+}
+
+footer button:hover {
+    background-color: #0056b3;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #61dafb;
+}
